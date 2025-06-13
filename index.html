@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>🌙 Bem-vinda Raíssa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff69b4;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    #lirio {
+      display: none;
+      width: 200px;
+      height: auto;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚪 Só a Raissa pode entrar</h1>
+  <button onclick="entrar()">Entrar</button>
+  <img id="lirio" src="lily.gif" alt="Lírio se abrindo">
+
+  <script>
+    function entrar() {
+      document.querySelector('h1').style.display = 'none';
+      document.querySelector('button').style.display = 'none';
+      const lirio = document.getElementById('lirio');
+      lirio.style.display = 'block';
+
+      // Espera 2.5 segundos e redireciona
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 2500);
+    }
+  </script>
+
+</body>
+</html>

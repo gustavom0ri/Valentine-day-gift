@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌸 Meu Cantinho Fofo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --rosa-claro: #ffe4ec;
+      --rosa-escuro: #ff91af;
+      --fundo: #fff0f5;
+      --texto: #444;
+      --borda: #ffb6c1;
+    }
+
+    [data-tema="escuro"] {
+      --fundo: #2b2b2b;
+      --texto: #fff;
+      --borda: #ff69b4;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pacifico', cursive;
+      background-color: var(--fundo);
+      color: var(--texto);
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--borda), var(--rosa-escuro));
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 4px dashed white;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: white;
+      text-shadow: 2px 2px #ff69b4;
+    }
+
+    .container {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadein 1s ease;
+    }
+
+    .card {
+      background: white;
+      border: 2px dashed var(--borda);
+      border-radius: 20px;
+      padding: 1rem;
+      box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      color: var(--rosa-escuro);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 0.5rem;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      border-radius: 12px;
+      margin-top: 0.5rem;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 2rem 1rem;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Efeitos fofos */
+    .coraçao {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+      animation: subir 2s ease-out forwards;
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    @keyframes subir {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-150px) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    .explodir {
+  animation: desaparecer 0.6s forwards ease-in;
+
+
+@keyframes desaparecer {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.4) rotate(20deg); opacity: 0; }
+}
+
+.coraçao {
+  position: fixed;
+  font-size: 20px;
+  animation: flutuar 3s ease-out forwards;
+  opacity: 0.9;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(1.8) rotate(30deg);
+    opacity: 0;
+  }
+}
+#presente.shrink {
+  animation: encolher 0.6s forwards ease;
+}
+
+@keyframes encolher {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+
+
+    }
+  </style>
+</head>
+<body data-tema="claro">
+
+  <header>
+    <h1>🌸 Meu Amor 🌸</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>Raissa</h2>
+      <p>Oi meu amor, eu não sou o melhor fazendo coisas artesanais, então eu decidi fazer algo para voce que eu seja bom fazendo</p>
+      <h3><strong>Um Site!</strong></h3>
+      <p>eu quero que voce saiba que eu te amo mais que tudo meu amor, e que eu vou te amar cada dia mais </p>
+      <p>Você não faz ideia das diversas formas que voce me faz cada dia mais feliz, eu te amo com todo o meu ser</p>
+      <p>e é por isso que eu montei esse site, pra mostrar que eu te amo, e que estou disposto a dedicar o meu tempo para mostrar isso</p>
+      <p>obviamente não ta a coisa mais bonita do mundo, mas eu acredito que você vai gostar</p>
+      <p>com muito amor</p><h2>Gustavo Mori</h2>
+    </div>
+
+    <div class="card">
+      <h2>🐶 Nossos bichinhos</h2>
+      <img src="negão.jpg" alt="Foto fofa de animal">
+      <img src="kamala.jpg" alt="Foto fofa de animal">
+      <img src="nego].jpg" alt="Foto fofa de animal">
+      <p>Ele é o amorzinho da casa! 💕</p>
+    </div>
+
+    <div class="card">
+      <h2>🎀 Coisas que eu quero fazer com você</h2>
+      <ul>
+        <li>ir ao cinema</li>
+        <li>ir em varias esposições</li>
+        <li>ir em um parque</li>
+        <li>fazer um pequinique</li>
+        <li>experimentar varias comidas diferentes</li>
+        <li>comer bastante boreli</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🖼️ Nossas fotos juntos</h2>
+      <div class="galeria" style="grid-template-columns: repeat(2, 1fr);">
+        <img src="Imagem do WhatsApp de 2025-06-01 à(s) 12.08.44_141cc7ba.jpg" alt="1">
+        <img src="Imagem do WhatsApp de 2025-06-01 à(s) 12.08.44_f28d42be.jpg" alt="2">
+        <img src="Imagem do WhatsApp de 2025-06-01 à(s) 12.08.44_749ed1b0.jpg" alt="3">
+        <img src="Imagem do WhatsApp de 2025-06-01 à(s) 12.08.45_e11b3471.jpg" alt="4">
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>💖 Um vídeo que amo</h2>
+      <iframe width="100%" height="200" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Vídeo fofinho" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="card">
+      <h2>🌼 Uma mensagem linda</h2>
+      <p>Você é uma flor rara nesse jardim do mundo. 🌷 Nunca pare de brilhar!</p>
+    </div>
+
+    <div class="card" id="presente-card">
+  <h2>🎁 O seu presente</h2>
+  <div id="presente-wrapper" style="text-align:center; transition: transform 0.5s;">
+    <img id="presente" src="Gift GIF.gif" alt="Presente" style="cursor: pointer; width: 200px;">
+  </div>
+
+  <div id="pergunta" style="display:none; text-align:center;">
+    <p><strong>Quer ver o seu presente?</strong></p>
+    <button onclick="mostrarPresente()">Sim 💝</button>
+    <button onclick="mostrarGatoTriste()">Não 😿</button>
+  </div>
+
+  <div id="gato-triste" style="display:none; text-align:center;">
+    <img src="CAT-SAD.gif" style="width:150px;">
+    <p><strong>quer ver????</strong></p>
+    <button onclick="mostrarGatoFeliz()">Sim 😸</button>
+    <button onclick="voltarPergunta()">Não 🙈</button>
+  </div>
+
+  <div id="gato-feliz" style="display:none; text-align:center;">
+    <img src="HAPPY-CAT.gif" style="width:150px;">
+  </div>
+
+  <div id="surpresa" style="display:none; text-align:center; margin-top: 1rem;">
+    <img src="vivara.jpg" alt="Surpresa Vivara" id="imagem-surpresa"
+         style="max-width: 100%; opacity: 0; transform: scale(0.8); transition: all 1s ease; border-radius: 12px; box-shadow: 0 0 15px pink;">
+  </div>
+
+
+
+
+
+  
+</div>
+
+
+  </div>
+
+  <div class="footer">
+    💖Feito com muito amor para a mulher mais perfeita do mundo💖
+  </div>
+
+<script>
+  const presente = document.getElementById("presente");
+  const pergunta = document.getElementById("pergunta");
+  const wrapper = document.getElementById("presente-wrapper");
+  const gatoTriste = document.getElementById("gato-triste");
+  const gatoFeliz = document.getElementById("gato-feliz");
+  const surpresa = document.getElementById("surpresa");
+  const imagemSurpresa = document.getElementById("imagem-surpresa");
+
+  presente.addEventListener("click", () => {
+    presente.classList.add("shrink");
+    setTimeout(() => {
+      wrapper.style.display = "none";
+      pergunta.style.display = "block";
+    }, 600);
+  });
+
+  function mostrarPresente() {
+    pergunta.style.display = "none";
+    surpresa.style.display = "block";
+    setTimeout(() => {
+      imagemSurpresa.style.opacity = "1";
+      imagemSurpresa.style.transform = "scale(1)";
+    }, 100);
+  }
+
+  function mostrarGatoTriste() {
+    pergunta.style.display = "none";
+    gatoTriste.style.display = "block";
+  }
+
+  function voltarPergunta() {
+    gatoTriste.style.display = "none";
+    pergunta.style.display = "block";
+  }
+
+  function mostrarGatoFeliz() {
+    gatoTriste.style.display = "none";
+    gatoFeliz.style.display = "block";
+    setTimeout(() => {
+      gatoFeliz.style.display = "none";
+      mostrarPresente();
+    }, 2000);
+  }
+</script>
+
+
+
+
+</body>
+</html>
